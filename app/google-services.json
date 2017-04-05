@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "954418195630",
+    "firebase_url": "https://fir-test-d152e.firebaseio.com",
+    "project_id": "fir-test-d152e",
+    "storage_bucket": "fir-test-d152e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:954418195630:android:daeddae67fda7103",
+        "android_client_info": {
+          "package_name": "com.example.kennethelee.nammuk"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "954418195630-08sfkcfnt6p2b7mpit1fqc3d1g7pjcnq.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.kennethelee.nammuk",
+            "certificate_hash": "24eed9b49da6725abf473ff84179c2b7a7e67cf7"
+          }
+        },
+        {
+          "client_id": "954418195630-s31s0laq49cdop11cnpobkun1fmictv2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCXPgL1nGPpMlv8tupgPFuaX7B3O3jL-Yc"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "954418195630-s31s0laq49cdop11cnpobkun1fmictv2.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
