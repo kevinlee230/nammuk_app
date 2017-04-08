@@ -4,50 +4,86 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.kennethelee.nammuk.MainActivity">
+    tools:context="com.example.kennethelee.nammuk.LoginActivity">
 
+    //절대값으로 객체 위치를 지정시 에러발생 - constraint infer를 통해 버그 수정
     <EditText
         android:id="@+id/EmailField"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="10"
-        android:hint="E-Mail"
         android:inputType="textEmailAddress"
-        tools:layout_editor_absoluteX="83dp"
-        tools:layout_editor_absoluteY="243dp" />
+        android:hint="@string/EmailField"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        app:layout_constraintBottom_toTopOf="@+id/PasswordField"
+        app:layout_constraintRight_toRightOf="parent"
+        tools:layout_constraintLeft_creator="1"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintLeft_toLeftOf="parent" />
+        app:layout_constraintBottom_toTopOf="@+id/PasswordField"/>
 
     <EditText
         android:id="@+id/PasswordField"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="10"
-        android:hint="Password"
+        android:hint="@string/PasswordField"
         android:inputType="textPassword"
-        tools:layout_editor_absoluteX="83dp"
-        tools:layout_editor_absoluteY="307dp" />
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="@+id/EmailField"
+        tools:layout_constraintLeft_creator="1"
+        android:layout_marginBottom="167dp"
+        app:layout_constraintLeft_toLeftOf="@+id/EmailField" />
 
     <Button
         android:id="@+id/loginbutton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="LOGIN"
-        tools:layout_editor_absoluteX="99dp"
-        tools:layout_editor_absoluteY="371dp" />
+        android:text="@string/loginbutton"
+        android:layout_marginStart="11dp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/RegisterButton"
+        tools:layout_constraintBaseline_creator="1"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="@+id/PasswordField"
+        android:layout_marginLeft="11dp" />
 
     <TextView
-        android:id="@+id/Title"
+        android:id="@+id/LoginTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Nam.Muk."
+        android:text="@string/LoginTitle"
         android:textSize="24sp"
-        tools:layout_editor_absoluteX="137dp"
-        tools:layout_editor_absoluteY="77dp" />
+        tools:layout_constraintTop_creator="1"
+        android:layout_marginStart="120dp"
+        android:layout_marginTop="112dp"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginLeft="120dp" />
 
     <Button
         android:id="@+id/RegisterButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Register"
-        tools:layout_editor_absoluteX="198dp"
-        tools:layout_editor_absoluteY="371dp" />
+        android:text="@string/RegisterButton"
+        tools:layout_constraintTop_creator="1"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="18dp"
+        app:layout_constraintTop_toBottomOf="@+id/PasswordField"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toRightOf="@+id/loginbutton"
+        android:layout_marginLeft="8dp" />
+
+    <android.support.constraint.Guideline
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/guideline"
+        app:layout_constraintGuide_begin="20dp"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="20dp"
+        tools:layout_editor_absoluteY="0dp" />
+
 </android.support.constraint.ConstraintLayout>

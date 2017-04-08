@@ -1,3 +1,11 @@
 <resources>
     <string name="app_name">NamMuk</string>
+
+    //버튼에 쓰는 텍스트 필드 이런식으로 고쳐야함(정석)
+    <string name="EmailField">E-mail</string>
+    <string name="PasswordField">Password</string>
+    <string name="loginbutton">LOGIN</string>
+    <string name="LoginTitle">Nam.Muk.</string>
+    <string name="RegisterButton">REGISTER</string>
+    <string name="logoutButton">로그아웃</string>
 </resources>
