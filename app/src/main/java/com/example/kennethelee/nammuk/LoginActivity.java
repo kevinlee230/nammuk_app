@@ -41,7 +41,7 @@ public class LoginActivity extends AppCompatActivity {
 
         //테스트값 추후에 DB에서 가져오는 것으로 변경해야함
         if (loginId != null && loginPwd != null) {
-            if (loginId.equals("김경태") && loginPwd.equals("1234")) {
+            if (loginId.equals("nammuk") && loginPwd.equals("1234")) {
                 Toast.makeText(LoginActivity.this, loginId + "님 자동로그인 입니다.", Toast.LENGTH_SHORT).show();
                 Intent intent = new Intent(LoginActivity.this, MainActivity.class);
                 startActivity(intent);
@@ -51,10 +51,11 @@ public class LoginActivity extends AppCompatActivity {
             loginBtn.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
-                    if (id.getText().toString().equals("김경태") && pwd.getText().toString().equals("1234")) {
+                    if (id.getText().toString().equals("nammuk") && pwd.getText().toString().equals("1234")) {
                         SharedPreferences auto = getSharedPreferences("auto", Activity.MODE_PRIVATE);
                         //아이디가 '김경태'이고 비밀번호가 '1234'일 경우 SharedPreferences.Editor를 통해
                         //auto의 loginId와 loginPwd에 값을 저장해 줍니다.
+                        //에뮬의 한글자판 부재로 아이디 nammuk으로 변경
                         SharedPreferences.Editor autoLogin = auto.edit();
                         autoLogin.putString("inputId", id.getText().toString());
                         autoLogin.putString("inputPwd", pwd.getText().toString());
