@@ -12,7 +12,7 @@ import android.widget.Toast;
 
 public class LoginActivity extends AppCompatActivity {
 
-    //제대로 되는지 테스트 주석
+
     /*자동로그인 관련 수정, 수정한 부분은 위에 주석 하나씩 달겠음
     참고사이트 -
     http://blog.naver.com/PostView.nhn?blogId=rain483&logNo=220812563378&parentCategoryNo=&categoryNo=16&viewDate=&isShowPopularPosts=false&from=postView
