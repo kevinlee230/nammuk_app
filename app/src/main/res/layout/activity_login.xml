@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.kennethelee.nammuk.LoginActivity">
+    tools:context="com.example.kennethelee.nammuk2.LoginActivity">
 
     //절대값으로 객체 위치를 지정시 에러발생 - constraint infer를 통해 버그 수정
     <EditText
@@ -13,14 +13,15 @@
         android:layout_height="wrap_content"
         android:ems="10"
         android:inputType="textEmailAddress"
-        android:hint="@string/EmailField"
+        android:hint="EmailField"
         tools:layout_constraintRight_creator="1"
         tools:layout_constraintBottom_creator="1"
         app:layout_constraintBottom_toTopOf="@+id/PasswordField"
         app:layout_constraintRight_toRightOf="parent"
         tools:layout_constraintLeft_creator="1"
         android:layout_marginBottom="8dp"
-        app:layout_constraintLeft_toLeftOf="parent" />
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintHorizontal_bias="0.502" />
         app:layout_constraintBottom_toTopOf="@+id/PasswordField"/>
 
     <EditText
@@ -28,54 +29,67 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="10"
-        android:hint="@string/PasswordField"
+        android:hint="PasswordField"
         android:inputType="textPassword"
         tools:layout_constraintRight_creator="1"
         tools:layout_constraintBottom_creator="1"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintRight_toRightOf="@+id/EmailField"
         tools:layout_constraintLeft_creator="1"
-        android:layout_marginBottom="167dp"
-        app:layout_constraintLeft_toLeftOf="@+id/EmailField" />
+        android:layout_marginBottom="163dp"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginRight="8dp"
+        app:layout_constraintRight_toRightOf="parent" />
 
     <Button
         android:id="@+id/loginbutton"
-        android:layout_width="wrap_content"
+        android:layout_width="150dp"
         android:layout_height="wrap_content"
-        android:text="@string/loginbutton"
         android:layout_marginStart="11dp"
-        app:layout_constraintBaseline_toBaselineOf="@+id/RegisterButton"
+        android:text="loginbutton"
         tools:layout_constraintBaseline_creator="1"
         tools:layout_constraintLeft_creator="1"
-        app:layout_constraintLeft_toLeftOf="@+id/PasswordField"
-        android:layout_marginLeft="11dp" />
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginRight="8dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginBottom="14dp"
+        app:layout_constraintBottom_toTopOf="@+id/RegisterButton" />
 
     <TextView
         android:id="@+id/LoginTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/LoginTitle"
-        android:textSize="24sp"
-        tools:layout_constraintTop_creator="1"
         android:layout_marginStart="120dp"
-        android:layout_marginTop="112dp"
+        android:text="NamMuk"
+        android:textSize="24sp"
         tools:layout_constraintLeft_creator="1"
+        tools:layout_constraintTop_creator="1"
+        android:layout_marginLeft="8dp"
         app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginRight="8dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintHorizontal_bias="0.162"
         app:layout_constraintTop_toTopOf="parent"
-        android:layout_marginLeft="120dp" />
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/EmailField" />
 
     <Button
         android:id="@+id/RegisterButton"
-        android:layout_width="wrap_content"
+        android:layout_width="150dp"
         android:layout_height="wrap_content"
-        android:text="@string/RegisterButton"
-        tools:layout_constraintTop_creator="1"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="18dp"
-        app:layout_constraintTop_toBottomOf="@+id/PasswordField"
+        android:text="RegisterButton"
         tools:layout_constraintLeft_creator="1"
-        app:layout_constraintLeft_toRightOf="@+id/loginbutton"
-        android:layout_marginLeft="8dp" />
+        tools:layout_constraintTop_creator="1"
+        android:layout_marginRight="117dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        android:layout_marginBottom="32dp" />
 
     <android.support.constraint.Guideline
         android:layout_width="wrap_content"
