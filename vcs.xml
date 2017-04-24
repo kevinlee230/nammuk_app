@@ -10,8 +10,12 @@
           <option name="url" value="https://github.com/kevinlee230/Nammuk2.git" />
           <option name="userName" value="" />
         </UrlAndUserName>
+        <UrlAndUserName>
+          <option name="url" value="https://github.com/kevinlee230/nammuk_app.git" />
+          <option name="userName" value="" />
+        </UrlAndUserName>
       </list>
     </option>
-    <option name="cloneParentDir" value="C:\Users\Kennethe Lee\AndroidStudioProjects" />
+    <option name="cloneParentDir" value="C:\Users\speed\AndroidStudioProjects" />
   </component>
 </application>
